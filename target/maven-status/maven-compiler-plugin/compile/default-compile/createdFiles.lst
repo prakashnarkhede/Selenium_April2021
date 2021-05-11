@@ -1,0 +1,13 @@
+com\demoOrg\VehInsCalc\PageObjects\SelectPriceOptionsPageObjects.class
+com\demoOrg\VehInsCalc\PageObjects\EnterProductDataPageObjects.class
+com\demoOrg\VehInsCalc\Utilities\CommonMethods.class
+com\demoOrg\VehInsCalc\Utilities\ListenersImplementation.class
+com\demoOrg\VehInsCalc\Utilities\ExtentSetup.class
+com\demoOrg\VehInsCalc\PageObjects\EnterVehicleDataPageObjects.class
+com\demoOrg\VehInsCalc\Engines\ActionEngine.class
+com\demoOrg\VehInsCalc\Utilities\PropertiesOperations.class
+com\demoOrg\VehInsCalc\Engines\TestEngine.class
+com\demoOrg\VehInsCalc\PageObjects\HomePageObjects.class
+com\demoOrg\VehInsCalc\Utilities\ExcelOperations.class
+com\demoOrg\VehInsCalc\PageObjects\EnterInsurantDataPageObjects.class
+com\demoOrg\VehInsCalc\PageObjects\SendQuotePageObjects.class

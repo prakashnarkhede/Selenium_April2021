@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 16.501 s <<< FAILURE! - in TestSuite
+VehicalInsuranceTest_dataDriven(uiTests.CalculateVehicleInsurance)  Time elapsed: 6.797 s  <<< FAILURE!
+java.lang.AssertionError: expected [33] but found [255.00]
+	at uiTests.CalculateVehicleInsurance.VehicalInsuranceTest_dataDriven(CalculateVehicleInsurance.java:40)
+
