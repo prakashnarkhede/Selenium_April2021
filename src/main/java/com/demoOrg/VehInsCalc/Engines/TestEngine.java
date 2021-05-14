@@ -1,12 +1,16 @@
 package com.demoOrg.VehInsCalc.Engines;
 
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -37,7 +41,12 @@ public class TestEngine extends CommonMethods{
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless");   ////or use- options.setHeadless(true);
 
-				driver = new ChromeDriver(options);
+			//	driver = new ChromeDriver(options);
+				DesiredCapabilities capability = DesiredCapabilities.chrome();
+				capability.setBrowserName("chrome");
+				capability.setPlatform(Platform.WIN10);
+
+				driver = new RemoteWebDriver(new URL("http://192.168.0.104:4444/wd/hub"), capability);
 			} else {
 				driver = new ChromeDriver();
 
