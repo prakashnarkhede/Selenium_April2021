@@ -45,7 +45,7 @@ public class TestEngine extends CommonMethods{
 			//	driver = new ChromeDriver(options);
 				DesiredCapabilities capability = DesiredCapabilities.chrome();
 				capability.setBrowserName(BrowserType.CHROME);
-			//	capability.setPlatform(Platform.WIN10);
+				capability.setPlatform(Platform.WIN10);
 
 				driver = new RemoteWebDriver(new URL("http://192.168.0.104:4444/wd/hub"), capability);
 			} else {
