@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
@@ -43,8 +44,8 @@ public class TestEngine extends CommonMethods{
 
 			//	driver = new ChromeDriver(options);
 				DesiredCapabilities capability = DesiredCapabilities.chrome();
-				capability.setBrowserName("chrome");
-				capability.setPlatform(Platform.WIN10);
+				capability.setBrowserName(BrowserType.CHROME);
+			//	capability.setPlatform(Platform.WIN10);
 
 				driver = new RemoteWebDriver(new URL("http://192.168.0.104:4444/wd/hub"), capability);
 			} else {
